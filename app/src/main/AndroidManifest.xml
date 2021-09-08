@@ -11,7 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Info"></activity>
+        <activity
+            android:name=".MultiChoice"
+            android:exported="true" />
+        <activity
+            android:name=".CompassListen"
+            android:exported="true" />
+        <activity
+            android:name=".CompassPublishing"
+            android:exported="true" />
+        <activity android:name=".Info" />
         <activity android:name=".Rellenar" />
         <activity android:name=".Hanged" />
         <activity android:name=".Uncramble" />

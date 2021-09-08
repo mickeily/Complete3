@@ -81,7 +81,7 @@ public class Hanged extends AppCompatActivity {
 
     }
 
-    public void cargar()
+    public String[][] cargar()
     {
         save.checkPermission(this);
         archivo = save.readFile(this,"/sdcard/DataEssential.csv");
@@ -107,6 +107,8 @@ public class Hanged extends AppCompatActivity {
             }
             contador++;
         }
+
+        return contenido;
     }
     public void seleccionarElemento()
     {

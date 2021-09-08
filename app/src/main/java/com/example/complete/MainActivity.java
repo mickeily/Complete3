@@ -146,4 +146,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    public void compassActivity(View view)
+    {
+
+        Intent compass = new Intent(this,CompassPublishing.class);
+        startActivity(compass);
+
+    }
+
 }
