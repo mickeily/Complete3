@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".InCero"
+            android:exported="true" />
+        <activity
             android:name=".MultiChoice"
             android:exported="true" />
         <activity

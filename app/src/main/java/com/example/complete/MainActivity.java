@@ -99,7 +99,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
     public String getLibro()
     {
         return libro;
@@ -146,12 +145,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
     public void compassActivity(View view)
     {
 
         Intent compass = new Intent(this,CompassPublishing.class);
         startActivity(compass);
+
+    }
+
+    public void lostActivity(View view)
+    {
+
+        Intent lost = new Intent(this,InCero.class);
+        startActivity(lost);
 
     }
 
