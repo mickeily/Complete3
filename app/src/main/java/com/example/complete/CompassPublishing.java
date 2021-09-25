@@ -31,6 +31,13 @@ public class CompassPublishing extends AppCompatActivity {
         startActivity(test);
     }
 
+    public void compassFlasCardActivity(View view)
+    {
+
+        Intent flashCard = new Intent(this,CompassFlashCard.class);
+        startActivity(flashCard);
+    }
+
     public String getBotonText()
     {
         return botonText;

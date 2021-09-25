@@ -142,7 +142,7 @@ public class Info extends AppCompatActivity {
                             {
                                 if(intentos<11)
                                 {
-                                    menu[13]++;
+                                    menu[12]++;
                                     menu[11]++;
                                 }
                                 else
@@ -181,6 +181,7 @@ public class Info extends AppCompatActivity {
                 }
                 contador++;
             }
+            int a =0;
 
         } catch (Exception e)
         {
@@ -227,7 +228,7 @@ public class Info extends AppCompatActivity {
                avance += avance(archivo[contador][2],archivo[contador][1]);
             }
 
-            if(!archivo[contador][3].equalsIgnoreCase("0"))
+            if(!archivo[contador][1].equalsIgnoreCase("0"))
             {
                 lib= (archivo[contador][7]);
                 unid= (archivo[contador][8]);
@@ -236,6 +237,11 @@ public class Info extends AppCompatActivity {
 
             intentos += Integer.parseInt(archivo[contador][3]);
             puntaje += Integer.parseInt(archivo[contador][2]);
+
+            if (contador == 50)
+            {
+                int a =0;
+            }
 
             contador ++;
         }
@@ -283,24 +289,29 @@ public class Info extends AppCompatActivity {
         {
             switch (ava)
             {
-                case "1":
+                case "1":  case "6":
                 {
                     acumulador+=1;
                     break;
                 }
-                case "2":
+                case "2": case "7":
                 {
                     acumulador+=2;
                     break;
                 }
-                case "3":
+                case "3": case "8":
                 {
                     acumulador+=3;
                     break;
                 }
-                case "4":
+                case "4": case "9":
                 {
                     acumulador+=4;
+                    break;
+                }
+                case "5":
+                {
+                    acumulador+=0;
                     break;
                 }
             }

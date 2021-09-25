@@ -32,6 +32,14 @@
             android:orientation="vertical">
 
             <Button
+                android:id="@+id/hard"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:onClick="hardActivity"
+                android:text="Hard" />
+
+            <Button
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -61,6 +69,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Button" />
 
             <Button
                 android:id="@+id/button4"

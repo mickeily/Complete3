@@ -26,19 +26,18 @@ public class MainActivity extends AppCompatActivity {
     private static String libro;
     private static String unidad;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-
-
         linearLayout = (LinearLayout) findViewById(R.id.layout_titulos);
         uncramble = (Button) findViewById(R.id.uncramble);
         linearLayout.setScrollBarFadeDuration(1);
         save.checkPermission(this);
+
+
         cargar();
         proyectarTitulos();
     }
@@ -160,5 +159,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(lost);
 
     }
+
+public void hardActivity(View view)
+{
+
+    Intent hard = new Intent(this,Hard.class);
+    startActivity(hard);
+
+}
 
 }

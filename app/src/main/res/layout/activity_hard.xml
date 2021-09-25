@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CompassPublishing">
+    tools:context=".Hard">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,20 +26,19 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/select_hard"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="compassListenActivity"
-                android:text="Listen" />
+                android:onClick="selectingHardActivity"
+                android:text="Select" />
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/button15"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="compassListenActivity"
-                android:text="Read" />
+                android:text="Button" />
         </LinearLayout>
 
         <LinearLayout
@@ -49,20 +48,19 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/btn_list"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="compassFlasCardActivity"
-                android:text="Flash Card" />
+                android:onClick="listHardActivity"
+                android:text="List" />
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/button17"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:onClick="compassTestActivity"
-                android:text="Test" />
+                android:text="Button" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

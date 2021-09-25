@@ -134,6 +134,12 @@ public class Rellenar extends AppCompatActivity {
         {
             if (e!=null)
             {
+                Character letra = e.charAt(0);
+                if(letra.isUpperCase(letra))
+                {
+                    textoPrincipal.setText(textoPrincipal.getText() +"\n\n");
+                }
+
                 textoPrincipal.setText(textoPrincipal.getText() +" " + e);
             }
         }
