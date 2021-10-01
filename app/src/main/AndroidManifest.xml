@@ -13,13 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".HardHanged"
+            android:exported="true" />
+        <activity
             android:name=".CompassFlashCard"
             android:exported="true" />
         <activity
-            android:name=".ListHard"
+            android:name=".HardList"
             android:exported="true" />
         <activity
-            android:name=".SelectingHard"
+            android:name=".HardSelecting"
             android:exported="true" />
         <activity
             android:name=".Hard"

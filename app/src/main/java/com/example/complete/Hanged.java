@@ -3,10 +3,8 @@ package com.example.complete;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,7 +34,6 @@ public class Hanged extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hanged);
-        //layoutMascara = (LinearLayout)findViewById(R.id.mascara);
         oracion = (TextView)findViewById(R.id.text_oracion);
         resp = (TextView)findViewById(R.id.resp);
         porciento = (TextView)findViewById(R.id.porciento);
@@ -163,7 +160,7 @@ public class Hanged extends AppCompatActivity {
     {
         String pal="";
 
-        TextView tv = (TextView)findViewById(R.id.textView);
+        TextView tv = (TextView)findViewById(R.id.masc);
 
         for(String s: texto)
         {

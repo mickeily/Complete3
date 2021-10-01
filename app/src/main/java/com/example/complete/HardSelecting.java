@@ -11,7 +11,7 @@ import android.widget.LinearLayout;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SelectingHard extends AppCompatActivity
+public class HardSelecting extends AppCompatActivity
 {
 
     private String[][] archivo = new String[5000][20];
@@ -28,7 +28,7 @@ public class SelectingHard extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selecting_hard);
+        setContentView(R.layout.activity_hard_selecting);
         layout = (LinearLayout)findViewById(R.id.contenido3);
         diselect = (Button)findViewById(R.id.diselect);
         select = (Button)findViewById(R.id.select);

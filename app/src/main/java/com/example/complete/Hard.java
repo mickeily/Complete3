@@ -5,12 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.LinearLayout;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Hard extends AppCompatActivity {
 
@@ -23,7 +17,7 @@ public class Hard extends AppCompatActivity {
     public void selectingHardActivity(View view)
     {
 
-        Intent selectingHard = new Intent(this,SelectingHard.class);
+        Intent selectingHard = new Intent(this, HardSelecting.class);
         startActivity(selectingHard);
 
     }
@@ -31,8 +25,15 @@ public class Hard extends AppCompatActivity {
     public void listHardActivity(View view)
     {
 
-        Intent listHard = new Intent(this,ListHard.class);
+        Intent listHard = new Intent(this, HardList.class);
         startActivity(listHard);
+
+    }
+
+    public void hardHangedActivity(View view)
+    {
+        Intent hardHanged = new Intent(this, HardHanged.class);
+        startActivity(hardHanged);
 
     }
 

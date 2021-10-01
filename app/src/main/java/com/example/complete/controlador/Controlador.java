@@ -22,6 +22,7 @@ public class Controlador
     public List<Contenido> getContenidoDificil(Activity activity)
     {
         contenidoGeneral = new ArrayList<>();
+        contenidoDepurado = new ArrayList<>();
         contenidoGeneral = data.readFile(activity,path);
         for(Contenido contenido: contenidoGeneral)
         {
