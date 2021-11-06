@@ -19,7 +19,7 @@ public class CompassListen extends AppCompatActivity {
     private String unidad="";
     private int ordenReproduccion;
     private int limite=0;
-    private Play play;
+    private Play play= new Play();
     private Hilo  hilo= new Hilo();
     private String botonText;
     private CompassPublishing compassPublishing = new CompassPublishing();
@@ -124,7 +124,6 @@ public class CompassListen extends AppCompatActivity {
 
     public void reproducir()
     {
-        play = new Play();
         String word= "/sdcard/Music/"+contenido[ordenReproduccion][10]+".mp3";
         String wordD= "/sdcard/Music/"+contenido[ordenReproduccion][10]+"_D.mp3";
         String wordE= "/sdcard/Music/"+contenido[ordenReproduccion][10]+"_E.mp3";
